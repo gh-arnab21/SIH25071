@@ -162,13 +162,11 @@ data/interim/*
 # Large dataset files (common formats)
 *.csv
 *.tsv
-*.json
 *.jsonl
 *.parquet
 *.feather
 *.h5
 *.hdf5
-*.pkl
 *.pickle
 *.joblib
 *.dill
@@ -206,7 +204,6 @@ data/interim/*
 *.rar
 
 # Model files and checkpoints
-models/saved/*
 !models/saved/.gitkeep
 !models/saved/README.md
 *.pth
