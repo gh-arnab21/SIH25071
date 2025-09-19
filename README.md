@@ -142,8 +142,8 @@ rockfall-prediction-system/
 ### 1. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Eminence-bit/Rockfall-prediction-model
-cd rockfall-prediction-model
+git clone https://github.com/Eminence-bit/Rockfall-Prediction-Model
+cd Rockfall-Prediction-Model
 
 # Install dependencies
 pip install -r requirements.txt
