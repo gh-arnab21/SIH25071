@@ -1,0 +1,20 @@
+Neural Network Classification Report
+==================================================
+
+Test Accuracy: 0.9250
+Cross-validation: 0.9250 (+/- 0.0935)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           1       0.90      1.00      0.95        27
+           2       1.00      0.77      0.87        13
+
+    accuracy                           0.93        40
+   macro avg       0.95      0.88      0.91        40
+weighted avg       0.93      0.93      0.92        40
+
+
+Confusion Matrix:
+[[27  0]
+ [ 3 10]]

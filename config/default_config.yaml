@@ -1,0 +1,101 @@
+# Default configuration for Rockfall Prediction System
+
+# Data paths
+data:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  models_dir: "models/saved"
+  
+# Model parameters
+model:
+  # Image processing
+  image:
+    input_size: [224, 224]
+    batch_size: 32
+    augmentation: true
+    normalization:
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+  
+  # CNN feature extractor
+  cnn:
+    backbone: "resnet50"
+    pretrained: true
+    freeze_backbone: false
+    feature_dim: 2048
+  
+  # LSTM temporal extractor
+  lstm:
+    hidden_size: 128
+    num_layers: 2
+    dropout: 0.2
+    sequence_length: 50
+  
+  # Ensemble classifier
+  ensemble:
+    algorithms: ["random_forest", "xgboost", "neural_network"]
+    voting_method: "soft"
+    use_stacking: true
+  
+  # Random Forest parameters
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 5
+    random_state: 42
+  
+  # XGBoost parameters
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    random_state: 42
+  
+  # Neural Network parameters
+  neural_network:
+    hidden_layers: [256, 128, 64]
+    dropout: 0.3
+    activation: "relu"
+    optimizer: "adam"
+    learning_rate: 0.001
+
+# Training parameters
+training:
+  validation_split: 0.15
+  test_split: 0.15
+  cross_validation_folds: 5
+  early_stopping_patience: 10
+  max_epochs: 100
+  batch_size: 32
+  
+# Data processing
+preprocessing:
+  # Missing data handling
+  imputation:
+    numerical_strategy: "median"
+    categorical_strategy: "mode"
+  
+  # Outlier detection
+  outlier_detection:
+    method: "iqr"
+    threshold: 1.5
+  
+  # Class imbalance
+  class_balance:
+    method: "smote"
+    sampling_strategy: "auto"
+  
+  # Feature scaling
+  scaling:
+    method: "standard"  # standard, minmax, robust
+
+# Evaluation metrics
+evaluation:
+  metrics: ["precision", "recall", "f1_score", "roc_auc"]
+  average: "weighted"
+  
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/rockfall_prediction.log"

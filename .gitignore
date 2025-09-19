@@ -1,0 +1,502 @@
+# ==============================================================================
+# PYTHON
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ==============================================================================
+# MACHINE LEARNING & DATA SCIENCE
+# ==============================================================================
+
+# Data files - keep structure but ignore large files
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/README.md
+data/external/*
+!data/external/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+
+# Large dataset files (common formats)
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.dill
+
+# Image datasets
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mkv
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+*.aac
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# Model files and checkpoints
+models/saved/*
+!models/saved/.gitkeep
+!models/saved/README.md
+*.pth
+*.pt
+*.ckpt
+*.model
+*.weights
+*.pb
+*.onnx
+*.tflite
+*.mlmodel
+
+# TensorFlow
+*.tfrecord
+*.tfrecords
+saved_model/
+checkpoints/
+tensorboard_logs/
+
+# PyTorch
+lightning_logs/
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+# Experiment tracking
+experiments/*/models/
+experiments/*/checkpoints/
+experiments/*/logs/
+experiments/*/*.pkl
+experiments/*/*.joblib
+experiments/*/*.pth
+experiments/*/*.pt
+
+# Notebooks with outputs (keep clean versions)
+*-checkpoint.ipynb
+
+# ==============================================================================
+# LOGS & OUTPUTS
+# ==============================================================================
+
+# Log files
+logs/
+*.log
+*.out
+*.err
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Output directories
+outputs/
+results/
+reports/generated/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# ==============================================================================
+# DEVELOPMENT TOOLS
+# ==============================================================================
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ==============================================================================
+# OPERATING SYSTEMS
+# ==============================================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# CLOUD & DEPLOYMENT
+# ==============================================================================
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+
+# Kubernetes
+*.yaml
+*.yml
+!docker-compose.yml
+!.github/workflows/*.yml
+!.github/workflows/*.yaml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# AWS
+.aws/
+
+# Google Cloud
+.gcloud/
+*.json
+!package.json
+!tsconfig.json
+
+# Azure
+.azure/
+
+# ==============================================================================
+# CONFIGURATION & SECRETS
+# ==============================================================================
+
+# Environment and configuration files
+.env*
+!.env.example
+config.ini
+config.yaml
+config.yml
+!config/default_config.yaml
+!config/example_config.yaml
+secrets.yaml
+secrets.yml
+*.secret
+*.key
+*.pem
+*.p12
+*.pfx
+
+# API keys and credentials
+.credentials
+.token
+.auth
+api_keys.txt
+credentials.json
+!config/credentials.example.json
+
+# ==============================================================================
+# PROJECT SPECIFIC
+# ==============================================================================
+
+# Experiment results (keep summaries, ignore detailed outputs)
+experiments/*/detailed_logs/
+experiments/*/raw_outputs/
+experiments/*/*.npz
+experiments/*/*.csv
+experiments/*/*.json
+!experiments/*/experiment_summary.txt
+!experiments/*/README.md
+
+# Cache directories
+.cache/
+cache/
+.download_cache/
+
+# Temporary processing files
+processing_temp/
+.processing/
+
+# Model artifacts
+artifacts/
+*.artifact
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ==============================================================================
+# DOCUMENTATION BUILD
+# ==============================================================================
+
+# Documentation builds
+docs/_build/
+docs/build/
+site/
+_site/
+
+# ==============================================================================
+# IGNORE EXCEPTIONS (Files to always track)
+# ==============================================================================
+
+# Keep important configuration examples
+!config/default_config.yaml
+!config/example_config.yaml
+
+# Keep documentation
+!docs/
+!*.md
+!*.rst
+
+# Keep small example datasets
+!data/examples/
+!data/samples/
+
+# Keep requirements files
+!requirements*.txt
+!pyproject.toml
+!setup.py
+!setup.cfg
+
+# Keep CI/CD configurations
+!.github/
+!.gitlab-ci.yml
+!.travis.yml
+!.circleci/
+
+# Keep Docker configurations for development
+!Dockerfile.dev
+!docker-compose.dev.yml

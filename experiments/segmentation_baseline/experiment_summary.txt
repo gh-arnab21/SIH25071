@@ -1,0 +1,17 @@
+Mining Dataset Training Experiment
+==================================================
+
+Dataset: segmentation
+Samples: 200
+Features: 41
+Classes: 2
+Test size: 0.2
+Random state: 42
+
+Results Summary:
+------------------------------
+Random Forest: 1.0000
+Gradient Boosting: 1.0000
+Neural Network: 1.0000
+
+Best Model: Random Forest (1.0000)

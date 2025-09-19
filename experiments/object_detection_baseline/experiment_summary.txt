@@ -1,0 +1,17 @@
+Mining Dataset Training Experiment
+==================================================
+
+Dataset: object_detection
+Samples: 200
+Features: 37
+Classes: 2
+Test size: 0.2
+Random state: 42
+
+Results Summary:
+------------------------------
+Random Forest: 1.0000
+Gradient Boosting: 1.0000
+Neural Network: 0.9250
+
+Best Model: Random Forest (1.0000)

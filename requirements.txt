@@ -1,0 +1,57 @@
+# Core ML and Data Science Libraries
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=1.0.0
+scipy>=1.7.0
+
+# Deep Learning
+tensorflow>=2.8.0
+torch>=1.11.0
+torchvision>=0.12.0
+
+# Computer Vision
+opencv-python>=4.5.0
+Pillow>=8.3.0
+
+# Geospatial Data Processing
+rasterio>=1.2.0
+geopandas>=0.10.0
+shapely>=1.8.0
+pyproj>=3.2.0
+
+# Time Series and Signal Processing
+obspy>=1.3.0  # For seismic data processing
+librosa>=0.9.0  # For audio/signal processing
+
+# Data Manipulation and Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Machine Learning Extensions
+xgboost>=1.5.0
+lightgbm>=3.3.0
+imbalanced-learn>=0.8.0  # For SMOTE and class balancing
+optuna>=3.0.0  # For hyperparameter optimization
+
+# Configuration and Utilities
+pyyaml>=6.0
+tqdm>=4.62.0
+joblib>=1.1.0
+
+# Testing
+pytest>=6.2.0
+pytest-cov>=3.0.0
+
+# Development Tools
+black>=22.0.0
+flake8>=4.0.0
+mypy>=0.910
+
+# Jupyter and Interactive Development
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optional: GPU acceleration (uncomment if using CUDA)
+# tensorflow-gpu>=2.8.0
+# torch-audio>=0.11.0  # For additional audio processing
