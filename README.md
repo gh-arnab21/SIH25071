@@ -137,60 +137,6 @@ rockfall-prediction-system/
     └── evaluation_guide.md           # Model evaluation guide
 ```
 
-## 🚀 Quick Start
-
-### 1. Installation
-```bash
-# Clone the repository
-git clone https://github.com/Eminence-bit/Rockfall-Prediction-Model
-cd Rockfall-Prediction-Model
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Install additional packages for seismic analysis
-pip install obspy
-```
-
-### 2. Dataset Setup
-```bash
-# Set up dataset directories and check status
-python scripts/setup_datasets.py
-
-# Validate downloaded datasets
-python scripts/validate_datasets.py --report
-```
-
-### 3. Data Preprocessing
-```bash
-# Preprocess mining datasets (images + annotations)
-python scripts/preprocess_mining_datasets.py --max-samples 500
-
-# Outputs processed features to data/processed/
-```
-
-### 4. Model Training
-```bash
-# Train on combined mining dataset
-python scripts/train_mining_models.py \
-    --dataset-type combined \
-    --experiment-name production_model \
-    --models random_forest gradient_boosting neural_network
-
-# Train on individual datasets
-python scripts/train_mining_models.py --dataset-type object_detection
-python scripts/train_mining_models.py --dataset-type segmentation
-```
-
-### 5. Results Analysis
-```bash
-# Check experiment results
-ls experiments/
-
-# View detailed reports
-cat experiments/production_model/experiment_summary.txt
-```
-
 ## 📈 Detailed Technical Implementation
 
 ### Feature Engineering Pipeline
@@ -382,14 +328,6 @@ python scripts/batch_predict.py \
 - **[Quick Start Guide](QUICK_START_DATASETS.md)**: Fast setup for new users
 - **[Training Results](MINING_TRAINING_RESULTS.md)**: Detailed experimental results
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ### Development Setup
 ```bash
 # Install development dependencies
@@ -413,11 +351,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Mining Industry Partners**: For providing real-world datasets and validation
 - **Open Source Community**: For the excellent ML libraries and tools
 - **Research Community**: For foundational work in rockfall prediction
-- **Data Contributors**: RockNet Taiwan, Brazilian Mining Research, Queensland Mining Safety
 
-## 📧 Contact & Support
 
-- **Project Lead**: G Prajyoth
-- **Email**: <prajyothnani123@gmail.com>
-- **Issues**: [GitHub Issues](https://github.com/Eminence-bit/rockfall-prediction/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Eminence-bit/rockfall-prediction/discussions)
